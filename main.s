@@ -54,4 +54,3 @@ main:
 	mov $0, %rax
 	mov $0, %rdi
 	call exit
-
