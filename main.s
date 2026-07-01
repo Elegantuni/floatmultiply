@@ -15,7 +15,7 @@ inputspec:
 .globl main
 main:
 	push %rbp
-	mov %rsp, %rbp
+	mov %rbp, %rsp
 
 	mov $0, %rax
 	mov $input, %rdi
