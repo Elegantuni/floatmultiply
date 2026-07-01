@@ -39,7 +39,7 @@ main:
 	movq (number1), %xmm0
 	movq (number2), %xmm1
 	call multiplyvalue
-	movq %xmm0%, (total1)
+	movq %xmm0, (total1)
 
 	mov $3, %rax
 	mov output, %rdi
