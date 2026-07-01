@@ -18,31 +18,31 @@ main:
 	mov %rbp, %rsp
 
 	mov $0, %rax
-	mov $input, %rdi
+	mov input, %rdi
 	call printf
 
 	mov $0, %rax
-	mov $inputspec, %rdi
-	mov $number1, %rsi
+	mov inputspec, %rdi
+	mov number1, %rsi
 	call scanf
 
 	mov $0, %rax
-	mov $input, %rdi
+	mov input, %rdi
 	call printf
 
 	mov $0, %rax
-	mov $inputspec, %rdi
-	mov $number2, %rsi
+	mov inputspec, %rdi
+	mov number2, %rsi
 	call scanf
 
 	mov $2, %rax
 	movq (number1), %xmm0
 	movq (number2), %xmm1
 	call multiplyvalue
-	movq %xmm0, (total1)
+	movq %xmm0%, (total1)
 
 	mov $3, %rax
-	mov $output, %rdi
+	mov output, %rdi
 	movq (number1), %xmm0
 	movq (number2), %xmm1
 	movq (total1), %xmm2
